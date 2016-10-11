@@ -37,8 +37,10 @@ data3 = json.loads(user.read())
 u_name = data3['name']
 username = data3['username']
 u_email = data3['email']
+u_phone = data3['phone']
+u_website = data3['website']
 
-print "Post ID:", id, "\nTitle:", title, "\nBody:", body, "\nWritten By:", u_name, "\nAuthor Email:", u_email, "\nComments:", c_msg, 
+print "Post ID:", id, "\n\nTitle:", title, "\n\nBody:", body, "\n\nWritten By:", u_name, "\n\nAuthor Email:", u_email, "\nAuthor Phone:", u_phone, "\nAuthor Website:", u_website, "\n\nComments:", c_msg, "\nCommenter:", c_email, 
 
 
 connection.close()
